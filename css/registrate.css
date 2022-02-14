@@ -1,0 +1,168 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+.imagen-formulario{
+	position: relative;
+	width: 900px;
+	height: 508px;
+	margin: auto;
+	top: 100px;
+	border-radius: 10px;
+}
+.oficina::before{
+	content: ' ';
+	width: 490px;
+	height: 100%;
+	background: #648250;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+.oficina{
+	width: 490px;
+	height: 100%;
+	background: url(../img/oficina.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 7px 13px 37px #000;
+	border-radius: 10px;
+}
+.informacion{
+	position: relative;
+	width: 490px;
+	height: 100%;
+	border-radius: 10px;
+}
+.informacion h1{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 200px;
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.informacion .user{
+	filter: invert(1);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 60px;
+}
+.p1_info{
+	position: relative;
+	top: 290px;
+	left: 50%;
+	width: 260px;
+	height: 50px;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+.p2_info{
+	position: relative;
+	top: 300px;
+	left: 50%;
+	width: 260px;
+	height: 50px;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+.p1_info p{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 17px;
+}
+.p2_info p{
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 17px;
+}
+.p1_info img,.p2_info img{
+	filter: invert(1);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.form-registro{
+	position: absolute;
+	width: 330px;
+	background: #648250;
+	padding: 30px;
+	top: 0;
+	right: 0;
+	border-radius: 10px;
+	font-family: 'calibri';
+	color: #fff;
+	box-shadow: 7px 13px 37px #000;
+}
+.form-registro h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+::placeholder{
+	color: #fff;
+}
+.controls{
+	width: 100%;
+	background: #648250;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: solid 1px #fff;
+	font-family: 'calibri';
+	font-size: 18px;
+	color: #fff;
+	outline:none;
+}
+.form-registro p{
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}
+.form-registro a{
+	color: #fff;
+	text-decoration: none;
+	text-underline-position: under;
+}
+.form-registro a:hover{
+text-decoration: underline;
+text-underline-position: under;
+}
+.form-registro .boton{
+	width: 100%;
+	background: #467832;
+	border: none;
+	padding: 12px;
+	color: #fff;
+	margin: 16px 0;
+	font-size: 16px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.boton:hover{
+	border: solid 1px #fff;
+}
+.volver{
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: center;
+	display: block;
+	text-underline-position: under;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Escocia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="icon" type="image/png" href="../img/landscape.png">
+	<style>
+		#contenedor{
+			top: 70px;
+			left: 0;
+			position: relative;
+			width: 100%;
+			height: 90vh;
+			overflow: hidden;
+		}
+		#contenedor h1{
+			position: absolute;
+			transform: translateY(-50%) rotate(-90deg);
+			top: 50%;
+			left: 0;
+			font-size:45px;
+			padding-left: 20px;
+			border-left: solid 5px #000;
+		}
+		#slider{
+			position: absolute;
+			left: 50%;
+			top:50%;
+			transform: translate(-50%,-50%);
+			width: 70%;
+			height: 90%;
+			margin: auto;
+			overflow: hidden;
+			box-shadow: 0 15px 25px rgba(0, 0, 0,.7);
+		}
+		#slider ul{
+			display: flex;
+			padding: 0;
+			width: 400%;
+			animation: cambio 15s infinite;
+			animation-direction: alternate-reverse;
+		}
+		#slider li{
+			width: 100%;
+			list-style: none;
+		}
+		#slider img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@keyframes cambio {
+			0%{margin-left: 0}
+			20%{margin-left: 0}
+
+			25%{margin-left: -100%;}
+			45%{margin-left: -100%;}
+
+			50%{margin-left: -200%;}
+			70%{margin-left: -200%;}
+
+			75%{margin-left: -300%;}
+			100%{margin-left: -300%;}
+		}
+		#norte, #sur{
+			width: 100%;
+			height: 1000px;
+			position: relative;
+		}
+		#edimburgo{
+			width: 100%;
+			height: 950px;
+			position: relative;
+		}
+		#norte{
+			margin-top: 200px;
+		}
+		.h3{
+			width: 330px;
+			text-align: center;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 50px;
+			border: solid 1px #000;
+			padding: 10px;
+			letter-spacing: 6px;
+		}
+		.h3::before,.h3::after{
+			background: #000;
+			position: absolute;
+			width: 330px;
+			height: 1px;
+			content: ' ';
+			top: 50%;
+		}
+		.h3::before{
+			right: 390px;
+		}
+		.h3::after{
+			left: 390px;
+		}
+		.contenedor_fotos{
+			position: relative;
+			top: 180px;
+			height: 600px;
+		}
+		.fotos{
+			position: relative;
+			width: 100%;
+			background: #fff;
+		}
+		.fotos img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+		.img{
+			position: relative;
+			width: 33.3%;
+			margin: 20px;
+		}
+		.contenedor_fotos .fotos{
+			display: inline-flex;
+		}
+		.img:hover .overlay{
+			height: 100%;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="arriba"></div>
+	<div id="main">
+		<div id="arrow">
+			<a href="#arriba"><img src="../img/arrow.png" alt="flecha"></a>
+		</div>
+		<header>
+			<nav>
+				<hr>
+				<img src="../img/landscape.png" alt="logo">
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="castillos.html">Castillos</a></li>
+					<li><a href="reservas.html">Reservas</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="contenedor">
+			<h1>GALERIA</h1>
+			<div id="slider">
+				<ul>
+					<li><img src="../img/img1.jpg" alt=""></li>
+					<li><img src="../img/tren.jpg" alt="tren"></li>
+					<li><img src="../img/puente.jpg" alt="puente"></li>
+					<li><img src="../img/montaña.jpg" alt="aurora"></li>
+				</ul>
+			</div>
+		</div>
+		<section>
+			<article id="norte">
+				<h3 class="h3">Norte</h3>
+				<div class="contenedor_fotos">
+					<div class="fotos">
+						<div class="img">
+							<img src="../img/anillo_de_brodgar.jpg" alt="Anillo de Brodgar">
+							<div class="overlay">
+								<h3>Anillo de Brodgar</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/bahia_de_marwick.jpg" alt="Bahía de Marwick">
+							<div class="overlay">
+								<h3>Bahía de Marwick</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/catedral_de_san_magnus.jpg" alt="Catedral de San Magnus">
+							<div class="overlay">
+								<h3>Catedral de San Magnus</h3>
+							</div>
+						</div>
+					</div>
+					<div class="fotos">
+						<div class="img">
+							<img src="../img/old_man_of_hoy.jpg" alt="Old man of Hoy">
+							<div class="overlay">
+								<h3>Old man of hoy</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/scapa_flow.jpg" alt="Scapa Flow">
+							<div class="overlay">
+								<h3>Scapa Flow</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/skara_brae.jpg" alt="Skara Brae">
+							<div class="overlay">
+								<h3>Skara Brae</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article id="sur">
+				<h3 class="h3">Sur</h3>
+				<div class="contenedor_fotos">
+					<div class="fotos">
+						<div class="img">
+							<img src="../img/St-Abbs.jpg" alt="St Abbs">
+							<div class="overlay">
+								<h3>St Abbs</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/Abadía-de-Jedburgh.jpg" alt="Abadía de Jedburgh">
+							<div class="overlay">
+								<h3>Abadía de Jedburgh</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/Centro_de_Jedburgh.jpg" alt="Centro de Jedburgh">
+							<div class="overlay">
+								<h3>Centro de Jedburgh</h3>
+							</div>
+						</div>
+					</div>
+					<div class="fotos">
+						<div class="img">
+							<img src="../img/Abadía-de-Melrose.jpg" alt="Abadía de Melrose">
+							<div class="overlay">
+								<h3>Abadía de Melrose</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/Palacio_de_Holyroodhouse.jpg" alt="Palacio de Holyroodhouse">
+							<div class="overlay">
+								<h3>Palacio de Holyroodhouse</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/Torre-de-Smailholm.jpg" alt="Torre de Smailholm">
+							<div class="overlay">
+								<h3>Torre de Smailholm</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article id="edimburgo">
+				<h3 class="h3">Edimburgo</h3>
+				<div class="contenedor_fotos">
+					<div class="fotos">
+						<div class="img">
+							<img src="../img/Cementerio_Greyfriar.jpg" alt="Cementerio Greyfriar">
+							<div class="overlay">
+								<h3>Cementerio Greyfriar</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/Royal_Mile.jpg" alt="Royal Mile">
+							<div class="overlay">
+								<h3>Royal Mile</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/Catedral_de_edimburgo.jpg" alt="Catedral de edimburgo">
+							<div class="overlay">
+								<h3>Catedral de edimburgo</h3>
+							</div>
+						</div>
+					</div>
+					<div class="fotos">
+						<div class="img">
+							<img src="../img/Victoria_St.jpg" alt="Victoria St">
+							<div class="overlay">
+								<h3>Victoria St</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/calton_hill.jpg" alt="Calton Hill">
+							<div class="overlay">
+								<h3>Calton Hill</h3>
+							</div>
+						</div>
+						<div class="img">
+							<img src="../img/dean_village.jpg" alt="Dean Village">
+							<div class="overlay">
+								<h3>Dean Village</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<hr id="hr_abajo">
+		<footer>
+			<div id="social">
+				<h3>Redes Sociales</h3>
+				<div id="sc">
+					<img src="../img/instagram.png" alt="Instagram">
+					<img src="../img/facebook.png" alt="facebook">
+					<img src="../img/youtube.png" alt="Youtube">
+					<img src="../img/whatsapp.png" alt="Whatsapp">
+				</div>
+			</div>
+			<div id="registrate">
+				<h3>Registrate</h3>
+				<p>Pincha aqui</p>
+				<a href="../porfolio/registrate.html"><img src="../img/mano.png" alt="mano"></a>
+			</div>
+			<div id="info">
+				<h3>Info</h3>
+				<p>Tel: 123-456-789</p>
+				<p>Evaporadadeagua@gmail.com</p>
+			</div>
+			<div id="copy">
+				<p>&copy; 2021-2023 España-Asturias</p>
+				<div id="validador">
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">
+   					 <img style="border:0;width:88px;height:31px"
+       				src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+       				alt="¡CSS Válido!" />
+   					 </a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

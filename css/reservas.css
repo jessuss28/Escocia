@@ -1,0 +1,221 @@
+	#hotel{
+	background: url(../img/hotel.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 85vh;
+}
+form{
+	background: #648250;
+	width: 1030px;
+	height: 90px;
+	position: relative;
+	top: 65%;
+	left: 50%;
+  	transform: translate(-50%, -50%);
+  	box-shadow: 0 5px 25px rgba(0, 0, 0,.7);
+}
+.search img{
+	position: absolute;
+	top: 50%;
+  	transform: translateY(-50%) scale(.7);
+  	cursor: pointer;
+  	filter: invert(1);
+  	padding-left: 15px;
+}
+#elegir select {
+	background: #648250;
+  	color: #ddd;
+  	padding-left: 50px;
+  	width: 280px;
+  	height: 90px;
+  	font-size: 24px;
+  	font-weight: 300;
+ 	border: none;
+  	outline: none;
+  	cursor: pointer;
+  	font-family: 'calibri';
+}
+#calendario{
+	width: 260px;
+	height: 100%;
+	position: absolute;
+	left: 328px;
+	top: 0;
+}
+#calendario input{
+	width: 260px;
+	height: 100%;
+	background: transparent;
+  	cursor: pointer;
+  	border: none;
+  	filter: invert(1);
+  	font-size: 24px;
+  	font-weight: 300;
+  	font-family: 'calibri';
+}
+#personas{
+	width: 250px;
+	height: 100%;
+	position: absolute;
+	right: 135px;
+	top: 0;
+}
+#personas select {
+	width: 250px;
+	height: 100%;
+	background: transparent;
+}
+#personas p{
+	position: absolute;
+	top: 50%;
+  	transform: translateY(-50%);
+  	color: #ddd;
+	font-size: 24px;
+  	font-weight: 300;
+	left: 25px;
+	font-family: 'calibri';
+}
+#personas input {
+	font-family: 'calibri';
+	width:  100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	color: #ddd;
+	font-size: 24px;
+  	font-weight: 300;
+}
+input[type=number]::-webkit-inner-spin-button {
+  	opacity: 1;
+  	padding: 30px 1px;
+}
+#enviar{
+	height: 100%;
+	width: 85px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #ddd;
+	border: none;
+}
+#enviar input{
+	transform: translate(-50%,-50%) scale(1);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+}
+#izq{
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background: #fff;
+	left: 304px;
+}
+#cent{
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background: #fff;
+	left: 612px;
+}
+#dere{
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background: #fff;
+	right: 108px;
+}
+#video{
+	width: 100%;
+	height: 2250px;
+	position: relative;
+	bottom: 0;
+}
+#video h1{
+	left: 50%;
+	transform:translateX(-50%);
+	top:90px;
+	position: absolute;
+	font-size: 40px;
+	color: #333;
+	font-weight: 300;
+}
+.video1{
+	height: 650px;
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	top: 200px;
+	transform: translateX(-50%);
+}
+video{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0 15px 25px rgba(0, 0, 0,.7);
+	outline:none;
+	border-radius: 5px;
+	width: 720px;
+}
+.video1 p, .video2 p, .video3 p{
+	position: absolute;
+	top: 460px;
+	text-align: center;
+	font-size: 17px;
+}
+.video2{
+	height: 650px;
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	top: 855px;
+	transform: translateX(-50%);
+}
+.video3{
+	height: 650px;
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	top: 1510px;
+	transform: translateX(-50%);
+}
+.reserva{
+	position: relative;
+	width: 100%;
+	height: 650px;
+}
+.reserva a{
+	text-decoration: none;
+	font-size: 35px;
+	color: #333;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.reserva a:hover{
+	border-bottom: solid 2px #648250;
+}
+.reserva table{
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	height: 200px;
+	font-size: 25px;
+	font-weight: 300;
+}
+.reserva td, .reserva tr, .reserva th{
+	text-align: center;
+	padding: 20px 5px; 
+	color: #333;
+	cursor: pointer;
+}
+.reserva th{
+	background: #fff;
+	color: #648250;
+}
+.reserva td:hover{
+	background: rgba(100, 130, 80,.3);
+}
